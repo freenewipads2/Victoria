@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+/*
+  INIT
+*/
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 2;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+a, a:hover {
+    color: inherit;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+  DEBUG
+*/
+
+.debug {
+    position: fixed;
+    top: 10vh;
+    left: 10vh;
+    width: 30vh;
+    height: 20vh;
+    overflow: scroll;
+    padding: 1%;
+    font-size: 1.5vh;
+}
+
+
+/*
+  CONTAINER-CLASS
+*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    word-wrap: break-word;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.p-right {
+    right: 0%;
+}
+
+.p-left {
+    left: 0%;
+}
+
+.p-top {
+    top: 0%;
+}
+
+
+/*.container img {
+    max-width: 90%;
+    max-height: 90%;
+    height: auto;
+}*/
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.column {
+    flex-direction: column;
+    align-content: center;
+}
+
+
+/*
+  ROW-CLASSES
+*/
+
+.w-1 {
+    width: 10%;
+}
+
+.w-2 {
+    width: 20%;
+}
+
+.w-3 {
+    width: 30%;
+}
+
+.w-4 {
+    width: 40%;
+}
+
+.w-5 {
+    width: 50%;
+}
+
+.w-6 {
+    width: 60%;
+}
+
+.w-7 {
+    width: 70%;
+}
+
+.w-8 {
+    width: 80%;
+}
+
+.w-9 {
+    width: 90%;
+}
+
+.w-10 {
+    width: 100%;
+}
+
+
+/*
+  BACKGROUND-COLOR
+*/
+
+.blue {
+    background: #5cc1e6;
+}
+
+.red {
+    background: #e65c5c;
+}
+
+.green {
+    background: #5ce680;
+}
+
+.black {
+    background: black;
+}
+
+.white {
+    background: white;
+}
+
+
+/*
+  TXT-CLASSES
+*/
+
+.txt-white {
+    color: white;
+}
+
+.txt-black {
+    color: black;
+}
+
+.txt-green {
+    color: #5ce680;
+}
+
+.txt-red {
+    color: #e65c5c;
+}
+
+.txt-blue {
+    color: #5cc1e6;
+}
+
+.txt-white {
+    color: white;
+}
+
+.txt-heavy {
+  font-weight: bold;
+}
+
+.txt-light {
+    font-weight: lighter;
+}
+
+.txt-s-1 {
+    font-size: 1vh;
+}
+.txt-s-2 {
+    font-size: 2vh;
+}
+.txt-s-3 {
+    font-size: 3vh;
+}
+.txt-s-4 {
+    font-size: 4vh;
+}
+.txt-s-5 {
+    font-size: 5vh;
+}
+.txt-s-6 {
+    font-size: 6vh;
+}
+.txt-s-7 {
+    font-size: 7vh;
+}
+.txt-s-8 {
+    font-size: 8vh;
+}
+.txt-s-9 {
+    font-size: 9vh;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/*
+MARGIN CLASSES
+*/
+
+.padding-01 {
+    padding: 1%;
+}
+
+.padding-02 {
+    padding: 2%;
+}
+
+.padding-03 {
+    padding: 3%;
+}
+
+.padding-04 {
+    padding: 4%;
+}
+
+.padding-05 {
+    padding: 5%;
+}
+
+.padding-l-01 {
+    padding-left: 1%;
+}
+
+.padding-l-02 {
+    padding-left: 2%;
+}
+
+.padding-l-03 {
+    padding-left: 3%;
+}
+
+.padding-l-04 {
+    padding-left: 4%;
+}
+
+.padding-l-05 {
+    padding-left: 5%;
+}
+
+.padding-r-01 {
+    padding-right: 1%;
+}
+
+.padding-r-02 {
+    padding-right: 2%;
+}
+
+.padding-r-03 {
+    padding-right: 3%;
+}
+
+.padding-r-04 {
+    padding-right: 4%;
+}
+
+.padding-r-05 {
+    padding-right: 5%;
+}
+
+.margin-auto {
+    margin: auto auto;
+}
+
+
+/*
+  BORDER-CLASSES
+*/
+
+.rounded-100 {
+    border-radius: 100%;
+}
+
+.rounded-50 {
+    border-radius: 50%;
+}
+
+.rounded-light {
+    border-radius: 10px;
+}
+
+.rounded-heavy {
+    border-radius: 20px;
+}
+
+
+/*
+Filters
+*/
+
+.bw-filter {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.blur-filter {
+    -webkit-filter: blur(5px);
+    /* Safari */
+    filter: blur(5px);
+}
+
+.light-filter {
+    -webkit-filter: brightness(200%);
+    /* Safari */
+    filter: brightness(200%);
+}
+
+
+/* Opacity */
+
+.o-25 {
+    opacity: 0.25;
+}
+
+.o-50 {
+    opacity: 0.50;
+}
+
+.o-75 {
+    opacity: 0.75;
+}
+
+.o-100 {
+    opacity: 1;
+}
+
+
+/* z-index */
+
+.z-100 {
+    z-index: 100;
+}
+
+.z-200 {
+    z-index: 200;
+}
+
+.z-300 {
+    z-index: 300;
+}
+
+.z-400 {
+    z-index: 400;
+}
+
+.z-500 {
+    z-index: 500;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        text-align: center;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .w-1, .w-2, .w-3, .w-4, .w-5, .w-6, .w-7, .w-8 {
+        width: 90%;
+        height: auto;
+    }
+    .mobile-kill {
+        display: none;
+    }
+    img {
+        height: 50%;
+        margin-top: 5%;
+    }
+}
