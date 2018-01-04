@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 
+/* For background and text-color */
 $primary-color: #333;
-
 $success-color: #333;
 $warning-color: #333;
-
 $danger-color: #333;
 $inactive-color: #333;
-
 $black-color: #ffffff;
 $white-color: #000000;
 
-
+/* Text sizes */
 $text-size-sm: 11pt;
 $text-size-md: 16pt;
 $text-size-lg: 32pt;
 $text-size-xl: 64pt;
+
+/* For margin and padding */
+$spacing-sm: 1%;
+$spacing-md: 3%;
+$spacing-lg: 5%;
+$spacing-xl: 10%;
