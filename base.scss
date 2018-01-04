@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
-
+@import 'victoria-variables';
 /*
   INIT
 */
@@ -70,13 +69,6 @@ a, a:hover {
     top: 0%;
 }
 
-
-/*.container img {
-    max-width: 90%;
-    max-height: 90%;
-    height: auto;
-}*/
-
 .flex {
     display: flex;
     justify-content: center;
@@ -138,25 +130,48 @@ a, a:hover {
 /*
   BACKGROUND-COLOR
 */
-
-.blue {
-    background: #5cc1e6;
+.bg-c-white {
+    background: $white-color;
+}
+.bg-c-black {
+    background: $black-color;
+}
+.bg-c-inactive {
+    background: $inactive-color;
+}
+.bg-c-primary {
+    background: $primary-color;
+}
+.bg-c-success {
+    background: $success-color;
+}
+.bg-c-warning {
+    background: $warning-color;
+}
+.bg-c-danger {
+    background: $danger-color;
 }
 
-.red {
-    background: #e65c5c;
+.bg-c-h-white:hover {
+    background: $white-color;
 }
-
-.green {
-    background: #5ce680;
+.bg-c-h-black:hover {
+    background: $black-color;
 }
-
-.black {
-    background: black;
+.bg-c-h-inactive:hover {
+    background: $inactive-color;
 }
-
-.white {
-    background: white;
+.bg-c-h-primary:hover {
+    background: $primary-color;
+}
+.bg-c-h-success:hover {
+    background: $success-color;
+}
+.bg-c-h-warning:hover {
+    background: $warning-color;
+}
+.bg-c-h-danger:hover {
+    background: $danger-color;
 }
 
 
@@ -164,28 +179,48 @@ a, a:hover {
   TXT-CLASSES
 */
 
-.txt-white {
-    color: white;
+.txt-c-white {
+    color: $white-color;
+}
+.txt-c-black {
+    color: $black-color;
+}
+.txt-c-inactive {
+    color: $inactive-color;
+}
+.txt-c-primary {
+    color: $primary-color;
+}
+.txt-c-success {
+    color: $success-color;
+}
+.txt-c-warning {
+    color: $warning-color;
+}
+.txt-c-danger {
+    color: $danger-color;
 }
 
-.txt-black {
-    color: black;
+.txt-c-h-white:hover {
+    color: $white-color;
 }
-
-.txt-green {
-    color: #5ce680;
+.txt-c-h-black:hover {
+    color: $black-color;
 }
-
-.txt-red {
-    color: #e65c5c;
+.txt-c-h-inactive:hover {
+    color: $inactive-color;
 }
-
-.txt-blue {
-    color: #5cc1e6;
+.txt-c-h-primary:hover {
+    color: $primary-color;
 }
-
-.txt-white {
-    color: white;
+.txt-c-h-success:hover {
+    color: $success-color;
+}
+.txt-c-h-warning:hover {
+    color: $warning-color;
+}
+.txt-c-h-danger:hover {
+    color: $danger-color;
 }
 
 .txt-heavy {
@@ -196,43 +231,28 @@ a, a:hover {
     font-weight: lighter;
 }
 
-.txt-s-1 {
-    font-size: 1vh;
+.txt-s-sm {
+    font-size: $text-size-sm;
 }
-.txt-s-2 {
-    font-size: 2vh;
+.txt-s-md {
+    font-size: $text-size-md;
 }
-.txt-s-3 {
-    font-size: 3vh;
+.txt-s-lg {
+    font-size: $text-size-lg;
 }
-.txt-s-4 {
-    font-size: 4vh;
-}
-.txt-s-5 {
-    font-size: 5vh;
-}
-.txt-s-6 {
-    font-size: 6vh;
-}
-.txt-s-7 {
-    font-size: 7vh;
-}
-.txt-s-8 {
-    font-size: 8vh;
-}
-.txt-s-9 {
-    font-size: 9vh;
+.txt-s-xl {
+    font-size: $text-size-xl;
 }
 
-.left {
+.txt-a-left {
     text-align: left;
 }
 
-.right {
+.txt-a-right {
     text-align: right;
 }
 
-.center {
+.txt-a-center {
     text-align: center;
 }
 
