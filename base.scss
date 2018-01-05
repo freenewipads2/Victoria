@@ -17,6 +17,13 @@ body {
     height: auto;
 }
 
+img{
+  vertical-align: middle;
+  line-height: 0;
+  font-size: 0px;
+  float: left
+}
+
 a, a:hover {
     color: inherit;
     text-decoration: none;
@@ -25,7 +32,7 @@ a, a:hover {
 .wrapper {
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 
@@ -36,6 +43,10 @@ a, a:hover {
 .container {
     width: 100%;
     height: 100%;
+}
+.container-square-sm{
+  width: 5vh;
+  height: 5vh;
 }
 
 .p-fixed {
@@ -354,6 +365,88 @@ MARGIN CLASSES
     padding-bottom: $spacing-xl;
 }
 
+////
+
+.m-a-sm {
+    margin: $spacing-sm;
+}
+
+.m-a-md {
+    margin: $spacing-md;
+}
+
+.m-a-lg {
+    margin: $spacing-lg;
+}
+
+.m-a-xl {
+    margin: $spacing-xl;
+}
+
+.m-l-sm {
+    margin-left: $spacing-sm;
+}
+
+.m-l-md {
+    margin-left: $spacing-md;
+}
+
+.m-l-lg {
+    margin-left: $spacing-lg;
+}
+
+.m-l-xl {
+    margin-left: $spacing-xl;
+}
+
+.m-r-sm {
+    margin-right: $spacing-sm;
+}
+
+.m-r-md {
+    margin-right: $spacing-md;
+}
+
+.m-r-lg {
+    margin-right: $spacing-lg;
+}
+
+.m-r-xl {
+    margin-right: $spacing-xl;
+}
+
+.m-t-sm {
+    margin-top: $spacing-sm;
+}
+
+.m-t-md {
+    margin-top: $spacing-md;
+}
+
+.m-t-lg {
+    margin-top: $spacing-lg;
+}
+
+.m-t-xl {
+    margin-top: $spacing-xl;
+}
+
+.m-b-sm {
+    margin-bottom: $spacing-sm;
+}
+
+.m-b-md {
+    margin-bottom: $spacing-md;
+}
+
+.m-b-lg {
+    margin-bottom: $spacing-lg;
+}
+
+.m-b-xl {
+    margin-bottom: $spacing-xl;
+}
+
 .margin-auto {
     margin: auto auto;
 }
@@ -384,22 +477,20 @@ MARGIN CLASSES
 Filters
 */
 
-.bw-filter {
+.bw-filter-h:hover {
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
 
-.blur-filter {
+.blur-filter-h:hover {
     -webkit-filter: blur(5px);
     /* Safari */
     filter: blur(5px);
 }
 
-.light-filter {
-    -webkit-filter: brightness(200%);
-    /* Safari */
-    filter: brightness(200%);
+.transition-fast{
+  transition: 0.5s all;
 }
 
 
