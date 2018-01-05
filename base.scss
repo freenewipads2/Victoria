@@ -4,7 +4,7 @@
 */
 
 * {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-family;
     font-weight: 300;
     line-height: 1.5;
     letter-spacing: 2;
@@ -25,6 +25,7 @@ a, a:hover {
 .wrapper {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 
@@ -35,7 +36,6 @@ a, a:hover {
 .container {
     width: 100%;
     height: 100%;
-    word-wrap: break-word;
 }
 
 .p-fixed {
@@ -63,10 +63,19 @@ a, a:hover {
 .d-flex {
     display: flex;
 }
-.d-j-center{
+.d-inline{
+  display: inline;
+}
+.d-inline-block{
+  display: inline-block;
+}
+.d-none{
+  display: none;
+}
+.flex-j-c{
   justify-content: center;
 }
-.d-a-center{
+.flex-a-c{
   align-items: center;
 }
 
@@ -76,6 +85,13 @@ a, a:hover {
 
 .flex-row {
   flex-direction: row;
+}
+
+.cursor-p{
+  cursor: pointer;
+}
+.cursor-none{
+  pointer-events: none;
 }
 
 /*
@@ -166,15 +182,9 @@ a, a:hover {
 .bg-c-h-warning:hover {
     background: $warning-color;
 }
-.bg-c-h-danger:hover {
+.bg-c-h-danger:hover{
     background: $danger-color;
 }
-
-
-/*
-  TXT-CLASSES
-*/
-
 .txt-c-white {
     color: $white-color;
 }
@@ -240,16 +250,23 @@ a, a:hover {
     font-size: $text-size-xl;
 }
 
-.txt-a-left {
+.txt-a-l {
     text-align: left;
 }
 
-.txt-a-right {
+.txt-a-r {
     text-align: right;
 }
 
-.txt-a-center {
+.txt-a-c {
     text-align: center;
+}
+
+.float-l{
+  float: left;
+}
+.float-r{
+  float: right;
 }
 
 
@@ -257,64 +274,84 @@ a, a:hover {
 MARGIN CLASSES
 */
 
-.padding-01 {
-    padding: 1%;
+.p-a-sm {
+    padding: $spacing-sm;
 }
 
-.padding-02 {
-    padding: 2%;
+.p-a-md {
+    padding: $spacing-md;
 }
 
-.padding-03 {
-    padding: 3%;
+.p-a-lg {
+    padding: $spacing-lg;
 }
 
-.padding-04 {
-    padding: 4%;
+.p-a-xl {
+    padding: $spacing-xl;
 }
 
-.padding-05 {
-    padding: 5%;
+.p-l-sm {
+    padding-left: $spacing-sm;
 }
 
-.padding-l-01 {
-    padding-left: 1%;
+.p-l-md {
+    padding-left: $spacing-md;
 }
 
-.padding-l-02 {
-    padding-left: 2%;
+.p-l-lg {
+    padding-left: $spacing-lg;
 }
 
-.padding-l-03 {
-    padding-left: 3%;
+.p-l-xl {
+    padding-left: $spacing-xl;
 }
 
-.padding-l-04 {
-    padding-left: 4%;
+.p-r-sm {
+    padding-right: $spacing-sm;
 }
 
-.padding-l-05 {
-    padding-left: 5%;
+.p-r-md {
+    padding-right: $spacing-md;
 }
 
-.padding-r-01 {
-    padding-right: 1%;
+.p-r-lg {
+    padding-right: $spacing-lg;
 }
 
-.padding-r-02 {
-    padding-right: 2%;
+.p-r-xl {
+    padding-right: $spacing-xl;
 }
 
-.padding-r-03 {
-    padding-right: 3%;
+.p-t-sm {
+    padding-top: $spacing-sm;
 }
 
-.padding-r-04 {
-    padding-right: 4%;
+.p-t-md {
+    padding-top: $spacing-md;
 }
 
-.padding-r-05 {
-    padding-right: 5%;
+.p-t-lg {
+    padding-top: $spacing-lg;
+}
+
+.p-t-xl {
+    padding-top: $spacing-xl;
+}
+
+.p-b-sm {
+    padding-bottom: $spacing-sm;
+}
+
+.p-b-md {
+    padding-bottom: $spacing-md;
+}
+
+.p-b-lg {
+    padding-bottom: $spacing-lg;
+}
+
+.p-b-xl {
+    padding-bottom: $spacing-xl;
 }
 
 .margin-auto {
